@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="locStrg.js" defer></script>
+</head>
+<body>
+    <form class="form" autocomplete="off" onsubmit="event.preventDefault();onFormSubmit()">
+        <div>
+            <label for="">Full Name</label>
+            <input class="input" type="text" name="fullName" id="fullName">
+        </div>
+        <div class="form-group">
+            <input type="file" name="image" id="image" class="input-image" accept="image/*">
+            <label for="image" class="btn btn-upload js-labelFile">
+                <i class="icon fa fa-check"></i>
+                <span class="js-fileName">Upload photo</span>
+            </label>
+        </div>
+        <div>
+            <label for="">Date</label>
+            <input class="input" type="datetime-local" name="date" id="date">
+        </div>
+
+        <div class="hasOrder">
+            <label for="">Has order</label>
+            <input class="input" type="checkbox" name="hasOrder" id="hasOrder">
+        </div>
+
+        <div>
+            <input class="button" type="submit" value="Submit">
+        </div>
+    </form> 
+    
+    
+    <table class="list" id="orderList">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Image</th>
+                <th>Date</th>
+                <th>Has order</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</body>
+</html>
